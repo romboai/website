@@ -1,0 +1,9 @@
+url: rombo-ai.github.io
+baseurl: /website
+title: "Rombo.ai" # the name of your site, e.g. ACME Corp.
+
+
+# Build settings
+permalink: :title/
+sass:
+  sass_dir: css

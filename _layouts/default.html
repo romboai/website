@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  </head>
+<html lang="it">
+  {% include header.html %}
   <body>
-    {{ content}}
+    <div class="container">
+      {{ content }}
+    </div>
+    {% include footer.html %}
+  <!-- JS here --> 
+  <script src="js/vendor/jquery-3.5.1.min.js"></script> 
+  <script src="js/bootstrap.bundle.min.js"></script>  
+  <script src="js/main.js"></script> 
   </body>
 </html>

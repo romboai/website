@@ -57,7 +57,11 @@ title: "Rombo AI"
 
     <!-- Hero-area START -->
     <div class="hero-area">
-        <img src="img/Background.png" alt="">
+        <picture>
+            <source srcset="img/Background.jp2" type="image/jp2"> <!-- format supported by safari -->
+            <source srcset="img/Background.webp" type="image/webp"> <!-- format supported on many browsers -->
+            <img src="img/Background.png" alt="AI"><!-- default -->
+        </picture>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

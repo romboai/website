@@ -97,7 +97,8 @@ ul {
   padding: 0px; }
 
 li {
-  list-style: none; }
+  color: #DD6731;
+}
 
  .padding{
    padding-right: 0;
@@ -367,14 +368,14 @@ li {
 
 .sol-blk h4 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 20px;
   font-family: var(--homebold);
   line-height: 32px;
   margin-bottom: 27px;
 }
 
 .sol-blk p {
-  font-size: 18px;
+  font-size: 13px;
   color: #00628C;
   margin-bottom: 28px;
 }

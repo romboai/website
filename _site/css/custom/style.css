@@ -360,7 +360,7 @@ li {
 
 
 .solutions-area {
-  background: url(/img/solu-back.jp2);
+  background: url(/img/solu-back.png);
   background-size: 100% 100%;
   background-position: top;
   margin-bottom: 40px;
@@ -404,7 +404,7 @@ li {
 
 .onboard-area {
   padding: 300px 0;
-  background: url(/img/onboard.jp2);
+  background: url(/img/onboard.png);
   background-size: 100% 100%;
   background-position: top;
 }

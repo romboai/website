@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <meta charset="utf-8">
 
+  <link rel="stylesheet" href="css/custom/style.css">
+
   <title>Rombo AI - Rombo.ai</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
@@ -210,7 +212,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 text-right">
-                    <img src="img/MaskGroup8.png" alt="">
+                    <picture>
+                        <source srcset="img/MaskGroup8.jp2" type="image/jp2"> <!-- format supported by safari -->
+                        <source srcset="img/MaskGroup8.webp" type="image/webp"> <!-- format supported on many browsers -->
+                            <img src="img/MaskGroup8.png" alt="">
+                </picture>
                 </div>
             </div>
             <div class="row align-items-center middle-row">
@@ -341,14 +347,14 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="contact-form">
-                            <form action="">
+                            <form action="https://app.99inbound.com/api/e/TfLbh_oL" method="POST" target="_blank">
                                 <h4>Let's chat</h4>
                                 <div class="row">
-                                    <div class="col-lg-6"><input type="text" placeholder="Name"></div>
-                                    <div class="col-lg-6"><input type="text" placeholder="Surname"></div>
-                                    <div class="col-lg-12"><input type="email" placeholder="E-mail"></div>
-                                    <div class="col-lg-12"><input type="text" placeholder="Company"></div>
-                                    <div class="col-lg-6"><input type="text" placeholder="Telephone"></div>
+                                    <div class="col-lg-6"><input type="text" name="name" placeholder="Name"></div>
+                                    <div class="col-lg-6"><input type="text" name="surname"  placeholder="Surname"></div>
+                                    <div class="col-lg-12"><input type="email" name="email" placeholder="E-mail"></div>
+                                    <div class="col-lg-12"><input type="text" name="company" placeholder="Company"></div>
+                                    <div class="col-lg-6"><input type="text" name="telephone" placeholder="Telephone"></div>
                                     <div class="col-lg-6">
                                         <div class="select"> 
                                             <span>
@@ -358,7 +364,7 @@
                                                 </g>
                                                 </svg>
                                                 </span>
-                                            <select name="" id="">  
+                                            <select name="role" id="">  
                                                 <option value="">Management</option> 
                                                 <option value="">CTO</option>
                                                 <option value="">Product Owner</option>
@@ -367,7 +373,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12"><textarea placeholder="Type your message here..."></textarea></div>
+                                    <div class="col-lg-12"><textarea name="query"  placeholder="Type your message here..."></textarea></div>
                                     <div class="col-lg-12">
                                         <label for="ckb" class="ckb">
                                             <input id="ckb" type="checkbox">
@@ -388,6 +394,9 @@
                                         </button>
                                     </div>
                                 </div>
+                                <div style="position: absolute; left: -5000px;">
+                                    <input type="checkbox" name="wonderful_forest_green_pinstriped_banana_slug" value="1" tabindex="-1" autocomplete="no">
+                                  </div>
                             </form>
                         </div>
                     </div>
@@ -433,8 +442,6 @@
 
 
   <!-- CSS here -->   
-
-  <link rel="stylesheet" href="css/custom/style.css">
   <link rel="stylesheet" href="css/custom/responsive.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- JS here -->   

@@ -22,7 +22,7 @@ font-family: homebook;
 body {
   font-family: var(--homebook); 
   color: #0B243B;
-  font-size: 20px;
+  font-size: 22px;
 }
 
   
@@ -384,7 +384,7 @@ li {
 }
 
 .sol-blk p {
-  font-size: 13px;
+  font-size: 16px;
   color: #00628C;
   margin-bottom: 28px;
 }
@@ -453,7 +453,7 @@ li {
 }
 
 .alblk p {
-  font-size: 15px;
+  font-size: 17px;
   color: #fff;
 }
 
@@ -559,7 +559,7 @@ li {
   border-radius: 20px;
   margin-bottom: 30px;
   padding-left: 25px;
-  font-size: 15px;
+  font-size: 17px;
   outline: none;
 }
 
@@ -587,7 +587,7 @@ li {
 
 .select select {
   padding-left: 10px !important;
-  color: #adb3bc;
+  color: black;
   -webkit-appearance: none;
 }
 .select select::marker{

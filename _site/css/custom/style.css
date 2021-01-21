@@ -651,6 +651,22 @@ label.ckb input:checked ~ span.checkmark::after {
 
 
 
+
+.project__maincontent {
+
+margin-top: 70px !important;
+background-color: #fff;
+color: #455b71;
+padding: 50px !important;
+box-shadow: 0 10px 58px 0 rgba(34, 41, 48, 0.2);
+margin: 1rem 0;
+position: relative;
+z-index: 10;
+}
+
+
+
+
 /* Contact-area css END and Footer-area START*/
 
 

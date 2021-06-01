@@ -305,8 +305,13 @@ li {
   color: #fff;
   background-color: #0B243B;
   transition: .3s;
-  z-index: 5;
-  cursor: pointer;
+  z-index: 15;
+  opacity: 0.5;
+}
+
+.up-btn:hover {
+	opacity: 1;
+	cursor: pointer;
 }
 
 /* 

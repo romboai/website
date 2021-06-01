@@ -3,7 +3,7 @@ const SITEBAR_BTN = $('.siteBar-btn');
 const SLIDING_LINK = $('.sliding-link');
 const UP_BTN = $('#UpBtn');
 
-function showButton() {
+function showUpButton() {
   var view = $(window),
       timeoutKey = -1;
   
@@ -47,14 +47,29 @@ function showButton() {
 }); 
 
 SLIDING_LINK.click(function(e) {
-  e.preventDefault();
-  var aid = $(this).attr('href');
+  // smooth scroll to the anchor id
+  // after link click
+  const aid = $(this).attr('href');
   if (aid) {
-      $('html,body').animate({scrollTop: $(aid).offset().top}, 'slow');
+	const anchor = aid.split('#').pop();
+	console.log(anchor);
+	const el = $(`#${ anchor }`);
+	if (el && el.length) {
+		// e.preventDefault();
+		$('html,body').animate({scrollTop: el.offset().top - 80}, 'slow');
+	}
   }
 })
 
-showButton();
+if(window.location.hash) {
+  // smooth scroll to the anchor id
+  // after page reload 
+  $('html, body').animate({
+  	scrollTop: ($(window.location.hash).offset().top - 180) + 'px',
+  }, 1000, 'swing');
+}
+
+showUpButton();
 
 UP_BTN.click(function(e) {
   e.preventDefault();

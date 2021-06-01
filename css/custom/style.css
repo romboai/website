@@ -305,7 +305,7 @@ li {
   color: #fff;
   background-color: #0B243B;
   transition: .3s;
-  z-index: 5;
+  z-index: 15;
   cursor: pointer;
 }
 

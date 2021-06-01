@@ -269,6 +269,23 @@ li {
 
 
 
+.up-btn {
+  display: block;
+  width: max-content;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-size: 28px;
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-family: var(--homebold);
+  color: #fff;
+  background-color: #0B243B;
+  transition: .3s;
+  z-index: 5;
+  cursor: pointer;
+}
 
 /* 
 .all_content{

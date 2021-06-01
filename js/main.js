@@ -1,3 +1,4 @@
+const HEADER_AREA = $('.header-area');
 const SITEBAR_BTN = $('.siteBar-btn');
 const SLIDING_LINK = $('.sliding-link');
 const UP_BTN = $('#UpBtn');
@@ -12,6 +13,15 @@ function showButton() {
       window.clearTimeout(timeoutKey);
     }
     timeoutKey = window.setTimeout(function(){
+	  // HEADER AREA
+      if (view.scrollTop() < 100) {
+		HEADER_AREA.removeClass('scrolled');
+      }
+      else {
+		HEADER_AREA.addClass('scrolled');
+	  }
+
+	  // UP BTN
       if (view.scrollTop() < 300) {
         UP_BTN.fadeOut({
             duration: 100,
@@ -24,7 +34,7 @@ function showButton() {
         });
         UP_BTN.removeClass('d-none');
       }
-    }, 30);
+    }, 0);
   });
 }
 

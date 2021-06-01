@@ -115,9 +115,31 @@ li {
 
 
 .header-area {
-  padding-top: 30px;
+  padding-top: 20px;
   width: 100%;
-  z-index: 99;  
+  z-index: 99;
+  min-height: 100px;
+  transition: max-height 0.3s ease-out;
+}
+.header-area .logo-area a img {
+  max-height: 80px;
+  transition: max-height 0.15s ease-out;
+}
+.header-area.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  background-color: white;
+  min-height: 60px;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12)!important;
+}
+.header-area.scrolled nav ul {
+	margin: 0;
+}
+.header-area.scrolled .logo-area a img {
+	max-height: 40px;
 }
 .menu-area {
   text-align: right;
@@ -305,7 +327,7 @@ li {
   z-index: -1;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   object-position: center center;
 }
 .hero-wrp h1 {

@@ -148,7 +148,8 @@
         padding-bottom: 100px;
     }
     .hero-area img { 
-        object-fit: cover; 
+		object-fit: cover;
+		object-position: left center;
     }
     .hero-wrp h1 {
         font-size: 30px; 

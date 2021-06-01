@@ -381,6 +381,11 @@ li {
   color: #fff;
   background: #dd6731;
   border-color: #dd6731;
+  text-decoration: none !important;
+}
+.theme-btn:hover svg {
+  fill: #fff;
+  text-decoration: none !important;
 }
 .title h2 {
   font-size: 42px;

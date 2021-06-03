@@ -115,9 +115,31 @@ li {
 
 
 .header-area {
-  padding-top: 30px;
+  padding-top: 20px;
   width: 100%;
-  z-index: 99;  
+  z-index: 99;
+  min-height: 100px;
+  transition: max-height 0.3s ease-out;
+}
+.header-area .logo-area a img {
+  max-height: 80px;
+  transition: max-height 0.15s ease-out;
+}
+.header-area.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  background-color: white;
+  min-height: 60px;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12)!important;
+}
+.header-area.scrolled nav ul {
+	margin: 0;
+}
+.header-area.scrolled .logo-area a img {
+	max-height: 40px;
 }
 .menu-area {
   text-align: right;
@@ -269,6 +291,28 @@ li {
 
 
 
+.up-btn {
+  display: block;
+  width: max-content;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-size: 28px;
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-family: var(--homebold);
+  color: #fff;
+  background-color: #0B243B;
+  transition: .3s;
+  z-index: 15;
+  opacity: 0.5;
+}
+
+.up-btn:hover {
+	opacity: 1;
+	cursor: pointer;
+}
 
 /* 
 .all_content{
@@ -289,7 +333,7 @@ li {
   width: 100%;
   height: 100%;
   /* object-fit: cover; */
-  object-position: top center;
+  object-position: center center;
 }
 .hero-wrp h1 {
   font-size: 46px;
@@ -337,6 +381,11 @@ li {
   color: #fff;
   background: #dd6731;
   border-color: #dd6731;
+  text-decoration: none !important;
+}
+.theme-btn:hover svg {
+  fill: #fff;
+  text-decoration: none !important;
 }
 .title h2 {
   font-size: 42px;
@@ -358,7 +407,7 @@ li {
 /* Hero-area css END Solution area START */
 
 
-.solutions-area {
+.use-cases-area {
   background: url(/img/solu-back.png);
   background-size: 100% 100%;
   background-position: top;
